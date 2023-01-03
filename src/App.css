@@ -1,0 +1,247 @@
+/*general style*/
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(56, 33, 16,.5) !important;
+  /* color of the scroll thumb */
+  border-radius: 5px;
+  /* roundness of the scroll thumb */
+  border: 1px solid rgba(56, 33, 16,.5) ;
+  /* creates padding around scroll thumb */
+}
+
+/*LOADER*/
+.spinner-bk {
+  background: rgba(240, 243, 244, 0.4);
+  position: fixed;
+  z-index: 9999999 !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 20% auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #382110;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+/*MainPage Styles*/
+.mainPage{
+  padding: 10px;
+}
+.mainTitle{
+  color: #382110;
+  background-color: #F4F1EA;
+  text-align: center;width: 100%;padding: 5px;position: fixed;top: 0;z-index: 9999;    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 0 6px rgb(0 0 0 / 23%);;
+
+}
+.mainPage h4{
+  border-bottom: 2px solid #382110;width: fit-content;
+  padding-bottom: 5px;margin-bottom: 10px;
+}
+.bookShelfPage{
+  border: 1px solid gainsboro;
+    margin: 10px;
+    padding: 10px;  overflow: scroll;
+
+}
+ .card{
+  height: 100% !important;
+}
+
+ .card-img-top{
+  height: 250px;}
+   .card-title{
+    font-size: 17px !important;
+  }
+  .moreDetailsBtn{
+    color: #382110 !important;
+    text-decoration: none !important;
+    padding: 10px;
+    background-color: #F4F1EA;text-align: center;
+  }
+  .moreDetailsBtn:hover{
+    color: #F4F1EA !important;
+    text-decoration: none !important;
+    padding: 10px;
+    background-color: #382110;
+  }
+  .bookDetailsCard img{
+    width:200px;
+    height:250px;
+  }
+  .bookDetailsCard li
+  {
+margin-left: 40px;
+  }
+  .bookDetailsCard p{padding: 5px 20px;}
+
+  /*Search Styles*/
+
+  .searchIcon{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;    border-radius: 50px;
+    background: #382110;
+    width: 50px;
+    height: 50px;color: #fff !important;text-align: center;cursor: pointer;
+  }.searchIcon a{
+    color: #fff !important;
+  }
+  .searchIcon svg{
+    margin-top: 15px;font-size: 20px;
+  }.backIcon{
+    position: absolute;
+    top: 10px;
+    color: #382110;
+    font-size: 25px;z-index: 999999;
+
+  }
+  .searchInputDiv input{
+    height: 45px;
+    border-radius: 15px;
+  }
+  .searchInputDiv input:focus{
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 0 6px rgb(0 0 0 / 23%);;
+  }
+  .booksApp .ant-col{
+    margin: 20px;
+  }
+  .booksApp .row{
+    padding: 0 20px;
+  }
+
+  .booksApp li{margin-left: 20px;}
+  .booksApp ul{
+    padding-left: 0 !important;
+  }
+  .noResults{
+  text-align: center;font-weight: bold;font-size: 30px;color: #382110;}
+
+  /*Change Shelf*/
+
+  .shelfDropDown{
+    position: absolute!important;
+    right: 5px;
+    top: 230px;
+    width: 40px;
+  height: 40px;
+  border-radius: 50%;
+    background: #382110!important;
+    color: #F4F1EA !important; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }.shelfDropDown .dropArrow{
+        position: absolute;
+    top: 12px;
+    left: 4px;
+  }
+  .shelfDropDown select {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;border-radius: 20px;
+  }
+  .bookCard .moveTo{
+    color: darkgray;
+
+  }.shelfDropDown option{
+    color: #382110 !important;
+  }.bookCard{
+    max-height: 500px !important;
+  }
