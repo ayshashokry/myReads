@@ -29,6 +29,7 @@ export default function BookDetails(props) {
         <>
           {bookDetails !== undefined && (
             <Row>
+            {console.log('dhhdhd')}
               <Col sm={4} style={{ margin: "auto", textAlign: "center" }}>
                 <img
                   src={
